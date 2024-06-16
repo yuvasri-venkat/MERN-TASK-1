@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RegistrationForm</title>
+<style>
+  body{
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+ <div class="login">
+    <p>Yuvasri Venkat</p>
+  <div class="container hidden" id="RegistrationForm">
+    <h2>Registration Page</h2>
+    <form>
+      <label for="First Name">First Name</label>
+      <input type="text" id="First Name" required><br><br>
+      
+      <label for="Second Name">Second Name</label>
+      <input type="text" id="Second Name" required><br><br>
+
+      
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" required><br><br>
+      
+      <label for="Re-Enter Password">Re-Enter Password:</label>
+      <input type="text" id="Re-Enter Password" required><br><br>
+
+      <label for="Gender">Gender:</label>
+      <div>
+        <input type="radio" name="Male" value="Gender1" required>Male
+        <input type="radio" name="Fe-male" value="Gender2">Fe-male
+
+      </div>
+
+      <br><br>
+      
+      <label for="Age">Age:</label>
+      <input type="text" id="Age" required><br><br>
+
+      <label for="Phone Number">Phone Number:</label>
+      <input type="text" id="Phone Number" required><br><br>
+      
+      <label for="address">Address:</label>
+      <input type="text" id="address" required><br><br>
+      
+      <label for="State">State:</label>
+      <input type="text" id="State" required><br><br>
+
+      <label for="Country">Country:</label>
+      <select id="Crounty" required>
+        <option value="INDIA">INDIA</option>
+        <option value="USA">USA</option>
+        <option value="KOREA">KOREA</option>
+        <option value="CHINA">CHINA</option>
+        <option value="ITALY">ITALY</option>
+        <option value="JAPAN">JAPAN</option>
+        <option value="LONDON">LONDON</option>
+      </select>
+    
+
+     </form>
+
+     <br><br>
+
+      <label for="LANGUAGES">LANGUAGES:</label>
+      <div>
+        <input type="radio" name="ENGLISH" value="Language1" required> English
+        <input type="radio" name="KANADA" value="Language2"> Kanada
+        <input type="radio" name="TELUGU" value="Language3"> Telugu
+        <input type="radio" name="HINDI" value="Language4">Hindi
+      </div>
+
+      <div>
+        <input type="checkbox" id="Herby I declare all the given details are true" name="Herby I declare all the given details are true"
+        <label for="Herby I declare all the given details are true">Herby I declare all the given details are true</label>
+      </div>
+      
+      <button type="button" onclick="showRegistration()">Register</button>
+      
+
+      <script>
+      function showRegistration() {
+        const loginForm = document.getElementById("loginForm");
+        const registrationForm = document.getElementById("registrationForm");
+  
+        loginForm.classList.add("hidden");
+        registrationForm.classList.remove("hidden");
+      }
+      
+
+
+    </form>
+  </body>
+</html>
